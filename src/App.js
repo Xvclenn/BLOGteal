@@ -14,7 +14,7 @@ function App() {
             <BrowserRouter>
                 <NavBarr />
                 <Routes>
-                    <Route path='/home' element={<HomePage />} />
+                    <Route path='/' element={<HomePage />} />
                     <Route path='/addBlog' element={<AddBlog />} />
                     <Route path='/blogList' element={<BlogList />} />
                     <Route path='/blogList/:id' element={<BlogsDetial />} />

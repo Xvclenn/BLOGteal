@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
-import "./BlogList.css";
-import { Link, useNavigate } from "react-router-dom";
-import axios from "axios";
+import React, { useEffect, useState } from 'react';
+import './BlogList.css';
+import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 export function BlogList() {
     let navigate = useNavigate();
     const [List, setList] = useState();
 
     useEffect(() => {
-        axios.get(`http://localhost:247/blogList`).then((res) => {
+        axios.get(`http://localhost:2470/blogList`).then((res) => {
             const { data, status } = res;
             if (status === 200) {
                 setList(data);
@@ -19,38 +19,38 @@ export function BlogList() {
 
     return (
         <>
-            <h3 className="createBlogTitle mt-5">Blog List</h3>
+            <h3 className='createBlogTitle mt-5'>Blog List</h3>
             {List &&
                 List.map((blog) => {
                     return (
                         <Link
                             key={blog.id}
                             to={`/blogList/${blog.id}`}
-                            className="BlogList text-decoration-none"
+                            className='BlogList text-decoration-none'
                             as={Link}
                         >
-                            <div className="blogItem">
-                                <div className="blogListItemLeft">
+                            <div className='blogItem'>
+                                <div className='blogListItemLeft'>
                                     <h3
-                                        className="blogItemTitle"
-                                        style={{ color: "teal" }}
+                                        className='blogItemTitle'
+                                        style={{ color: 'teal' }}
                                     >
                                         {blog.title}
                                     </h3>
                                     <span
-                                        className="authorStyle"
-                                        style={{ color: "grey" }}
+                                        className='authorStyle'
+                                        style={{ color: 'grey' }}
                                     >
                                         {blog.author}
                                     </span>
-                                    <span style={{ color: "pink" }}>Date</span>
+                                    <span style={{ color: 'pink' }}>Date</span>
                                 </div>
-                                <div className="blogListItemRight">
+                                <div className='blogListItemRight'>
                                     <img
                                         src={blog.img}
-                                        alt="dummy"
-                                        height="45px"
-                                        width="45px"
+                                        alt='dummy'
+                                        height='45px'
+                                        width='45px'
                                     />
                                 </div>
                             </div>
@@ -58,8 +58,8 @@ export function BlogList() {
                     );
                 })}
             <button
-                className="hiddenbackButton"
-                onClick={() => navigate("/home")}
+                className='hiddenbackButton'
+                onClick={() => navigate('/home')}
             >
                 Back
             </button>
