@@ -7,8 +7,9 @@ export function AddBlog() {
 
     return (
         <>
+            <h3 className="createBlogTitle mt-5">Add New Blog</h3>
             <div className="AddBlog">
-                <button className="Add " type="button" onClick={handleClick}>
+                <button className="Add" type="button" onClick={handleClick}>
                     Add New Blog
                 </button>
             </div>

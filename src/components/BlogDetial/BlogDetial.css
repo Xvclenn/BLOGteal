@@ -2,9 +2,32 @@
     display: flex;
     justify-content: space-between;
 }
+.blogItemRight img {
+    height: 250px;
+}
 
+@media screen and (max-width: 1024px) {
+    .blogItemInfo {
+        display: grid;
+    }
+    .blogItemRight img {
+        height: 100%;
+        width: 100%;
+    }
+    .date {
+        margin-top: 10px;
+    }
+    .blogItemInfo .Title {
+        font-size: 40px;
+    }
+}
 .Title {
     font-size: 65px;
+    text-transform: uppercase;
+    z-index: 10;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
 }
 
 .blogItemLeft {
@@ -28,7 +51,28 @@
     white-space: pre-wrap;
 }
 
-button {
+.backButton {
+    margin: 50px;
+    width: 100px;
+    background-color: teal;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 8px;
+}
+
+.authorStyle {
+    text-transform: lowercase;
+    font-family: "Montserrat", sans-serif;
+}
+
+.authorStyle::first-letter {
+    text-transform: uppercase;
+}
+
+.deleteButton {
     margin: 50px;
     width: 100px;
     background-color: teal;
