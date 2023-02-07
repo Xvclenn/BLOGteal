@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.form-control {
+    max-width: 500px;
+    margin: 10px;
+}
+
+.createBlog {
+    max-width: 520px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.createBlog label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: teal;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+textarea {
+    height: 150px;
+}
+
+.createBlogTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: teal;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.buttonAB {
+    margin: 20px 50px;
+    width: 100px;
+    background-color: teal;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 8px;
+}
+
+.buttonsss {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
