@@ -1,12 +1,14 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { NavBarr } from './components/NavBarr/NavBarr';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { HomePage } from './components/HomePage/HomePage';
-import { AddBlog } from './components/AddBlog/AddBlog';
-import { BlogList } from './components/BlogList/BlogList';
-import { CreateBlog } from './components/CreateBlog/CreateBlog';
-import { BlogsDetial } from './components/BlogDetial/BlogDetial';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { NavBarr } from "./components/NavBarr/NavBarr";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HomePage } from "./components/HomePage/HomePage";
+import { AddBlog } from "./components/AddBlog/AddBlog";
+import { BlogList } from "./components/BlogList/BlogList";
+import { CreateBlog } from "./components/CreateBlog/CreateBlog";
+import { BlogsDetial } from "./components/BlogDetial/BlogDetial";
+import { LogIN } from "./components/LogIN/LogIN";
+import { SignUP } from "./components/SignUP/SignUP";
 
 function App() {
     return (
@@ -14,11 +16,13 @@ function App() {
             <BrowserRouter>
                 <NavBarr />
                 <Routes>
-                    <Route path='/' element={<HomePage />} />
-                    <Route path='/addBlog' element={<AddBlog />} />
-                    <Route path='/blogList' element={<BlogList />} />
-                    <Route path='/blogList/:id' element={<BlogsDetial />} />
-                    <Route path='/addBlog/create' element={<CreateBlog />} />
+                    <Route path="/login" element={<LogIN />} />
+                    <Route path="/signin" element={<SignUP />} />
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/addBlog" element={<AddBlog />} />
+                    <Route path="/blogList" element={<BlogList />} />
+                    <Route path="/blogList/:id" element={<BlogsDetial />} />
+                    <Route path="/addBlog/create" element={<CreateBlog />} />
                 </Routes>
             </BrowserRouter>
         </>

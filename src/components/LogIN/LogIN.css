@@ -1,0 +1,28 @@
+.login {
+    width: 80vw;
+    margin: auto;
+    margin-top: 20px;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+    border-radius: 10px 0 0 10px;
+}
+
+.rightSide {
+    flex: 1;
+    background-color: teal;
+    border-radius: 0 10px 10px 0;
+}

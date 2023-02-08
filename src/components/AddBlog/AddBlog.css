@@ -6,6 +6,7 @@
 }
 
 .Add {
+    transition: ease 0.2s;
     margin: 20px 50px;
     width: 500px;
     height: 70px;
@@ -17,4 +18,10 @@
     font-size: 2em;
     font-weight: 700;
     padding: 8px;
+}
+
+.Add:hover {
+    background-color: #fff;
+    color: teal;
+    border: teal dashed 2px;
 }

@@ -52,6 +52,7 @@
 }
 
 .backButton {
+    transition: ease-in-out 0.2s;
     margin: 50px;
     width: 100px;
     background-color: teal;
@@ -66,6 +67,7 @@
 .authorStyle {
     text-transform: lowercase;
     font-family: "Montserrat", sans-serif;
+    font-weight: 600;
 }
 
 .authorStyle::first-letter {
@@ -73,6 +75,7 @@
 }
 
 .deleteButton {
+    transition: ease-in-out 0.2s;
     margin: 50px;
     width: 100px;
     background-color: teal;
@@ -82,4 +85,10 @@
     cursor: pointer;
     font-weight: 700;
     padding: 8px;
+}
+
+.detialButtons:hover {
+    background-color: #fff;
+    color: teal;
+    border: teal dashed 1px;
 }
