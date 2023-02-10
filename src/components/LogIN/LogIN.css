@@ -26,3 +26,15 @@
     background-color: teal;
     border-radius: 0 10px 10px 0;
 }
+
+.Logincontainer {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Logincontainer .btn-primary {
+    background-color: teal !important;
+    outline-color: teal !important;
+}

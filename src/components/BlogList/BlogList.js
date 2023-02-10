@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import "./BlogList.css";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import InputGroup from "react-bootstrap/InputGroup";
+
 export function BlogList() {
     let navigate = useNavigate();
     const [List, setList] = useState();
@@ -19,7 +23,21 @@ export function BlogList() {
 
     return (
         <>
-            <h3 className="createBlogTitle mt-5">Blog List</h3>
+            <div className="searchBlogList">
+                <h3 className="createBlogTitle m-0">Blog List</h3>
+                <InputGroup
+                    className="justify-content-end"
+                    style={{ maxWidth: "300px" }}
+                >
+                    <Form.Control
+                        className="m-0"
+                        placeholder="Recipient's username"
+                        aria-label="Recipient's username"
+                        aria-describedby="basic-addon2"
+                    />
+                    <Button className="searchBtn">Button</Button>
+                </InputGroup>
+            </div>
             {List &&
                 List.map((blog) => {
                     return (
