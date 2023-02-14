@@ -27,10 +27,10 @@ export function NavBarr() {
                             Blog List
                         </Nav.Link>
                     </div>
-                    <div className="loginSignin">
+                    {/* <div className="loginSignin">
                         <button onClick={login}>Log In</button>
                         <button onClick={signup}>Sign Up</button>
-                    </div>
+                    </div> */}
                 </Container>
             </Navbar>
         </>
